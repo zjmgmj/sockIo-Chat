@@ -1,18 +1,20 @@
+const localStroage = window.localStroage
 class LocalStroage {
   constructor() {}
-  get(key: String) {
+  getStroage(key) {
     return JSON.parse(localStroage.getItem(key))
   }
-  saveChat(msg: String, room: String){
+  saveChat(msg, room){
     // room = fromId-toId
-    const roomChat = this.getChat(room)
+    const chat = this.getStroage('chat')
+    const roomChat = chat[room]
     const nowTime = new Date().getTime()
     roomChat[nowTime] = msg
     localStroage.setItem('chat', JSON.stringify(chat))
     return this
   }
-  getChat(room: String){
-    const chat = this.get('chat')
+  getChat(room){
+    const chat = this.getStroage('chat')
     const roomChat = chat[room]
     return roomChat
   }

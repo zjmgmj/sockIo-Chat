@@ -7,5 +7,10 @@ app.use(router)
 
 import components from '@/components'
 components(app)
+debugger
+
+import utils from '@/utils'
+utils(app)
+
 
 app.mount('#app')
