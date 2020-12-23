@@ -10,6 +10,7 @@ export default {
     console.log('-----------------setup', props)
     onMounted(() => {
       console.log('-----------onMounted')
+      console.log(localStorage)
     })
   },
   methods: {
