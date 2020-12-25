@@ -2,7 +2,7 @@
 div aaa
   span sss
   div dddd
-van-button(type='primary') sss
+vButton(type='primary') sss
 </template>
 <script>
 import { onMounted } from 'vue'
