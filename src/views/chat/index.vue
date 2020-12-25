@@ -12,12 +12,7 @@ export default {
       console.log('-----------onMounted')
       console.log(localStorage)
     })
-  },
-  methods: {
-    
   }
 }
 </script>
-<style lang="stylus">
-  
-</style>
+<style lang="stylus"></style>
