@@ -1,15 +1,15 @@
-<template>
-  <div>test</div>
-  <van-button type="primary">sss</van-button>
+<template lang="pug">
+div aaa
+  span sss
+  div dddd
+van-button(type='primary') sss
 </template>
 <script>
 import { onMounted } from 'vue'
 export default {
   name: 'chat',
-  setup(props) {
-    console.log('-----------------setup', props)
+  setup() {
     onMounted(() => {
-      console.log('-----------onMounted')
       console.log(localStorage)
     })
   }
