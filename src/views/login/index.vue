@@ -1,7 +1,7 @@
 <template lang="pug">
-vForm(@submit='loginSubmit')
+vForm
   vField(v-model='form.userName', name='用户名', label='用户名', placeholder='用户名')
-  vButton(round, block, type='primary', native-type='submit') 登录
+  vButton(round, block, type='primary', @click='loginSubmit') 登录
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue'
@@ -19,7 +19,7 @@ const Component = defineComponent({
   },
   methods: {
     loginSubmit() {
-      console.log('-----------')
+      console.log('-----------', this)
     }
   }
 })
