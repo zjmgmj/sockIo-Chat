@@ -1,10 +1,8 @@
-import { Button, Form, Field } from 'vant'
-
+import { Button } from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css';
 const components = (app: any) => {
   const components: any = {
-    vButton: Button,
-    vForm: Form,
-    vField: Field
+    'el-button': Button
   }
   Object.keys(components).forEach((key: string) => {
     app.component(key, components[key])

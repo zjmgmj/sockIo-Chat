@@ -10,5 +10,5 @@ components(app)
 
 import global from '@/global'
 global(app)
-
-app.mount('#app')
+const root = window as any
+root.vm = app.mount('#app')

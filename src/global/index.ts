@@ -2,10 +2,10 @@ import LocalStroage from './LocalStroage'
 import Http from './Http'
 const global = (app: any) => {
   const global: any = {
-    localStorage: new LocalStroage(),
-    http: new Http()
+    $localStorage: new LocalStroage(),
+    $http: Http
   }
-  app.mixin(global)
+  app.config.globalProperties = global
 }
 
 export default global

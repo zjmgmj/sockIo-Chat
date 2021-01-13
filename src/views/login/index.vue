@@ -1,28 +1,31 @@
 <template lang="pug">
 vForm
-  vField(v-model='form.userName', name='用户名', label='用户名', placeholder='用户名')
-  vButton(round, block, type='primary', @click='loginSubmit') 登录
+  el-button(type="primary", plain, @click="loginSubmit") 登录
 </template>
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent } from "vue";
+import Basic from "@/api/index.ts";
 interface Login {
-  userName: string
+  userName: string;
 }
 const Component = defineComponent({
   setup() {
+    debugger;
     const form: Login = {
-      userName: ''
-    }
+      userName: "",
+    };
+    const basic: any = Basic;
     return {
-      form
-    }
+      form,
+      basic,
+    };
   },
   methods: {
     loginSubmit() {
-      console.log('-----------', this)
-    }
-  }
-})
-export default Component
+      debugger;
+      console.log("-----------", this.basic.test());
+    },
+  },
+});
+export default Component;
 </script>
-<style lang=""></style>

@@ -11,9 +11,9 @@
     "axios": "^0.21.1",
     "babel-plugin-import": "^1.13.3",
     "core-js": "^3.6.5",
+    "element-ui": "^2.14.1",
     "pug": "^3.0.0",
     "pug-plain-loader": "^1.1.0",
-    "vant": "^3.0.0",
     "vue": "^3.0.0",
     "vue-class-component": "^8.0.0-0",
     "vue-router": "^4.0.0-0"
@@ -45,9 +45,7 @@
     "extends": [
       "plugin:vue/vue3-essential",
       "eslint:recommended",
-      "@vue/typescript/recommended",
-      "@vue/prettier",
-      "@vue/prettier/@typescript-eslint"
+      "@vue/typescript/recommended"
     ],
     "parserOptions": {
       "ecmaVersion": 2020
@@ -55,7 +53,8 @@
     "rules": {
       "no-console": "off",
       "no-debugger": "off",
-      "@typescript-eslint/no-explicit-any": "off"
+      "@typescript-eslint/no-explicit-any": "off",
+      "@typescript-eslint/member-delimiter-style": "off"
     }
   },
   "browserslist": [
