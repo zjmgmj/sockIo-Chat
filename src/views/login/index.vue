@@ -1,6 +1,6 @@
 <template lang="pug">
-vForm
-  el-button(type="primary", plain, @click="loginSubmit") 登录
+el-button(type="primary", plain, @click="loginSubmit") 登录
+//- button(type="primary", plain, @click="loginSubmit") 登录
 </template>
 <script lang="ts">
 import { defineComponent } from "vue";
