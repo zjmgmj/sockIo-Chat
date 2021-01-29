@@ -25,7 +25,7 @@ const Component = defineComponent({
       const data = await this.basic.test();
       console.log("-------data", data);
       loginStore.login({ username: "zzz", password: "ssss" });
-      console.log("--------", loginStore.getState());
+      console.log("--------", loginStore.getState().loginInfo);
     },
   },
 });

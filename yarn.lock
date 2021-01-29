@@ -846,7 +846,7 @@
     "@babel/types" "^7.4.4"
     esutils "^2.0.2"
 
-"@babel/runtime@^7.0.0", "@babel/runtime@^7.10.5", "@babel/runtime@^7.11.0", "@babel/runtime@^7.8.4":
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.10.5", "@babel/runtime@^7.11.0", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.4":
   version "7.12.5"
   resolved "http://192.168.0.7:8081/repository/group-npm/@babel/runtime/-/runtime-7.12.5.tgz#410e7e487441e1b360c29be715d870d9b985882e"
   integrity sha512-plcc+hbExy3McchJCEQG3knOsuh3HH+Prx1P6cLIkET/0dLuQDEnrT+s27Axgc9bqfsmNUNHfscgMUdBpC9xfg==
@@ -5047,6 +5047,13 @@ import-from@^2.1.0:
   dependencies:
     resolve-from "^3.0.0"
 
+import-html-entry@^1.9.0:
+  version "1.11.1"
+  resolved "http://192.168.0.7:8081/repository/group-npm/import-html-entry/-/import-html-entry-1.11.1.tgz#3d8c5977926bdd122ab8e658965c102068b4af8d"
+  integrity sha512-O7mCUTwKdYU49/LH6nq1adWPnUlZQpKeGWIEcDq07KTcqP/v0jBLEIVc0oE0Mtlw3CEe0eeKGMyhl6LwfXCV7A==
+  dependencies:
+    "@babel/runtime" "^7.7.2"
+
 import-local@^2.0.0:
   version "2.0.0"
   resolved "http://192.168.0.7:8081/repository/group-npm/import-local/-/import-local-2.0.0.tgz#55070be38a5993cf18ef6db7e961f5bee5c5a09d"
@@ -7444,6 +7451,17 @@ q@^1.1.2:
   resolved "http://192.168.0.7:8081/repository/group-npm/q/-/q-1.5.1.tgz#7e32f75b41381291d04611f1bf14109ac00651d7"
   integrity sha1-fjL3W0E4EpHQRhHxvxQQmsAGUdc=
 
+qiankun@^2.3.6:
+  version "2.3.6"
+  resolved "http://192.168.0.7:8081/repository/group-npm/qiankun/-/qiankun-2.3.6.tgz#2480ba429874fe040171494ccc08a684ae904676"
+  integrity sha512-E0i/KhXJ72sI+/OzqQhGjqwfbUh9jFN0X2lAS70k2hbu6PPRc6Jf3Op3xhPXMHqP+2za3JRnf4Z3OfHea35zbA==
+  dependencies:
+    "@babel/runtime" "^7.10.5"
+    import-html-entry "^1.9.0"
+    lodash "^4.17.11"
+    single-spa "5.8.1"
+    tslib "^1.10.0"
+
 qs@6.7.0:
   version "6.7.0"
   resolved "http://192.168.0.7:8081/repository/group-npm/qs/-/qs-6.7.0.tgz#41dc1a015e3d581f1621776be31afb2876a9b1bc"
@@ -8059,6 +8077,11 @@ simple-swizzle@^0.2.2:
   integrity sha1-pNprY1/8zMoz9w0Xy5JZLeleVXo=
   dependencies:
     is-arrayish "^0.3.1"
+
+single-spa@5.8.1:
+  version "5.8.1"
+  resolved "http://192.168.0.7:8081/repository/group-npm/single-spa/-/single-spa-5.8.1.tgz#86c2575e297e31d8f06945944ec97e31851a59ae"
+  integrity sha512-RlyLZ1IDIPdzI6mQPzCQnlgTt9jmbAXBZODmifoDut840wksPDSPhcSS8jXMpuUlqOidQiX2YuLVQSR9DEgsXw==
 
 slash@^1.0.0:
   version "1.0.0"
@@ -8744,7 +8767,7 @@ ts-pnp@^1.1.6:
   resolved "http://192.168.0.7:8081/repository/group-npm/ts-pnp/-/ts-pnp-1.2.0.tgz#a500ad084b0798f1c3071af391e65912c86bca92"
   integrity sha512-csd+vJOb/gkzvcCHgTGSChYpy5f1/XKNsmvBGO4JXS+z1v2HobugDz4s1IeFXM3wZB44uczs+eazB5Q/ccdhQw==
 
-tslib@^1.8.0, tslib@^1.8.1, tslib@^1.9.0:
+tslib@^1.10.0, tslib@^1.8.0, tslib@^1.8.1, tslib@^1.9.0:
   version "1.14.1"
   resolved "http://192.168.0.7:8081/repository/group-npm/tslib/-/tslib-1.14.1.tgz#cf2d38bdc34a134bcaf1091c41f6619e2f672d00"
   integrity sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==

@@ -10,6 +10,7 @@ export abstract class Store<T extends Object> {
 		const newData = Object.assign(
 			{
 				test: 1,
+				menuList: [{ title: "菜单一", url: "" }],
 			},
 			data
 		);

@@ -1,11 +1,15 @@
-<template>
-  <router-view></router-view>
+<template lang="pug">
+router-view 
+  left-menu
+  .content
+
+//- <!-- <router-view></router-view> -->
 </template>
 
 <script>
 export default {
-  name: 'App'
-}
+  name: "App",
+};
 </script>
 
 <style>
