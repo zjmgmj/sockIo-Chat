@@ -1,3 +1,4 @@
+// 接口管理
 import Http from '../global/Http'
 const basic = {
   test: () => {
