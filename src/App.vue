@@ -1,11 +1,23 @@
-<template>
-  <router-view></router-view>
+<template lang="pug">
+//- router-view 
+//-   left-menu
+//-   .content
+#subapp-container
+  .subapp-loading(v-if="loading") Loading..............
+  #subapp-viewport
+//- <!-- <router-view></router-view> -->
 </template>
 
 <script>
 export default {
-  name: 'App'
-}
+  name: "App",
+  setup() {
+    const loading = ref(false);
+    return {
+      loading,
+    };
+  },
+};
 </script>
 
 <style>

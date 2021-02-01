@@ -1,12 +1,15 @@
-import { Button } from 'vant'
-
+// 组件注册
+// import { Button, Menu } from "ant-design-vue";
+// import Antd from "ant-design-vue/es";
+// import { MailOutlined, AppstoreOutlined, SettingOutlined } from "@ant-design/icons-vue";
+import testComponent from "./test.vue";
+import leftMenu from "./menu.vue";
 const components = (app: any) => {
-  const components: any = {
-    'van-button': Button
-  }
-  Object.keys(components).forEach((key: string) => {
-    app.component(key, components[key])
-  })
-}
+	// app.use(Antd);
+	const components: any = [testComponent, leftMenu];
+	components.forEach((component: any) => {
+		app.component(component.name, component);
+	});
+};
 
-export default components
+export default components;
